@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+nav{
+    height: 20vh;
+    background: linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+
+}
+
+.nav-links li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+}
+.nav-links li a:hover{
+    font-size: 40px;
+    font-weight: bold;
+}
+.landing {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h1 {
+    font-size: 50px;
+    margin: 100px;
+    color: #ae5fce;
+}
+
+@media (max-width: 768px) {
+   
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        /* this syntax is the most appropriate to have 
+        a perfectly aligned in the centered hamburger*/
+        z-index: 1;
+        /* the z-index property prevents the hamburger to be hidden by the new nav.links.open class */
+    }
+   
+    .nav-links {
+       position: fixed;
+       background: linear-gradient(45deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+       height: 100vh;
+       width: 100%; 
+       flex-direction: column;
+       clip-path: circle(100px at 90% -20%);
+       -webkit-clip-path: circle(100px at 90% -20%);
+       transition: all 1s ease-in-out;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+    }
+    .landing {
+        flex-direction: column;
+    }
+
