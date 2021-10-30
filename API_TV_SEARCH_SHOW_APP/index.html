@@ -1,0 +1,25 @@
+<!-- ********DESCRIPTION**********
+This project is TV Search Show website. The actual search takes
+place by executing an API request with Axios to the TVMaze API. 
+After the completion of the request we use the data from the response
+to display on the browser the search results that match the user's input -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Search</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>TV Show Search</h1>
+    <form id="searchForm">
+        <input type="text" placeholder="Type a search term" name="query">
+        <button>Search</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

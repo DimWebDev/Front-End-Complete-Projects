@@ -1,0 +1,60 @@
+body {
+    /* background-color: rgb(29, 29, 29); */
+    background: linear-gradient(90deg, rgb(71, 74, 77) 0%, rgb(51, 58, 59) 100%);
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-size: 25px;
+    margin: 0 0 40px 20px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(69, 93, 228);
+    color: white;
+    font-size: 35px;
+}
+
+input {
+    font-size: 25px;
+    margin: 0 20px 40px 0;
+    transition: 0.3s;
+}
+
+input:hover{
+    background-color:rgb(48, 0, 136);
+    color: white;
+    font-size: 35px;
+}
+
+input:focus{
+    background-color: rgb(93, 93, 94);
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    transition: 0.3s;
+    
+}
+
+h1:hover{
+    color: rgb(248, 112, 0);
+    font-size: 70px;
+}
+
+img{
+    opacity: 0.5;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+img:hover{
+    opacity: 1;
+    cursor: pointer;
+    width: 250px;
+    z-index: 2;
+}
